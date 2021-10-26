@@ -1,9 +1,20 @@
 package com.bridgelabz.workshop3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HotelReservation {
-    //DriverCode
-    public static void main(String[] args) {
-        //Print Welcome Message
-        System.out.println("Welcome to Hotel Reservation System");
+    private List<Hotel> hotels;
+
+    public HotelReservation() {
+        this.hotels = new ArrayList<Hotel>();
+    }
+
+    public void add(Hotel hotel) {
+        this.hotels.add(hotel);
+    }
+
+    public List<Hotel> getHotelList() {
+        return this.hotels;
     }
 }
